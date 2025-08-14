@@ -12,3 +12,17 @@ terraform-cribl/
 ├── variables.tf
 ├── outputs.tf
 └── provider.tf
+
+To Run: 
+# 1️⃣ Initialise Terraform
+terraform init
+
+# 2️⃣ Plan to see what will be created
+terraform plan -var="project_id=my-cribl-gcp" \
+                -var="billing_account=123456-ABCDEF-7890AB"
+
+# 3️⃣ Apply – confirm when prompted
+terraform apply
+
+To Clean: 
+terraform destroy
